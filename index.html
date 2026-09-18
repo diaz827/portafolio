@@ -22,10 +22,6 @@
         <span>Díaz<span class="dot">.</span></span>
       </a>
 
-      <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">
-        <span></span><span></span>
-      </button>
-
       <div class="nav-links">
         <a href="#sobre-mi" data-i18n="nav.about">Sobre mí</a>
         <a href="#proyectos" data-i18n="nav.projects">Proyectos</a>
@@ -34,16 +30,18 @@
         <a href="#educacion" data-i18n="nav.education">Educación</a>
         <a href="#experiencia" data-i18n="nav.experience">Experiencia</a>
         <a href="#contacto" data-i18n="nav.contact">Contacto</a>
-        <div class="lang-select-wrap">
-          <select class="lang-select" id="langSelect" aria-label="Seleccionar idioma">
-            <option value="es">🇪🇸 Español</option>
-            <option value="en">🇬🇧 English</option>
-            <option value="pt">🇵🇹 Português</option>
-          </select>
-        </div>
+      </div>
+
+      <div class="header-actions">
+        <button class="lang-toggle" id="langToggle" aria-label="Seleccionar idioma" data-i18n-attr="aria-label|lang.toggle">
+          <span id="langFlag">🇪🇸</span>
+        </button>
         <button class="theme-toggle" id="themeToggle" aria-label="Cambiar tema oscuro o claro" data-i18n-attr="aria-label|theme.toggle" aria-pressed="false">
           <svg class="theme-icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2.5M12 19.5V22M22 12h-2.5M4.5 12H2M19.07 4.93l-1.77 1.77M6.7 17.3l-1.77 1.77M19.07 19.07l-1.77-1.77M6.7 6.7L4.93 4.93"/></svg>
           <svg class="theme-icon-moon" viewBox="0 0 24 24" fill="currentColor"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+        </button>
+        <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">
+          <span></span><span></span>
         </button>
       </div>
     </nav>

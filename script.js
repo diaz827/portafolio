@@ -46,6 +46,7 @@ const translations = {
     "nav.experience": "Experiencia",
     "nav.contact": "Contacto",
     "theme.toggle": "Cambiar tema oscuro o claro",
+    "lang.toggle": "Cambiar idioma",
     "hero.availability": "Disponible para FCT · A Coruña",
     "hero.kicker": "DESARROLLO WEB / SOFTWARE",
     "hero.title": "Construyo cosas<br><em>que funcionan.</em>",
@@ -125,6 +126,7 @@ const translations = {
     "nav.experience": "Experience",
     "nav.contact": "Contact",
     "theme.toggle": "Toggle dark or light theme",
+    "lang.toggle": "Change language",
     "hero.availability": "Available for FCT · A Coruña",
     "hero.kicker": "WEB DEVELOPMENT / SOFTWARE",
     "hero.title": "I build things<br><em>that work.</em>",
@@ -204,6 +206,7 @@ const translations = {
     "nav.experience": "Experiência",
     "nav.contact": "Contacto",
     "theme.toggle": "Alternar tema claro ou escuro",
+    "lang.toggle": "Alterar idioma",
     "hero.availability": "Disponível para FCT · A Corunha",
     "hero.kicker": "DESENVOLVIMENTO WEB / SOFTWARE",
     "hero.title": "Construo coisas<br><em>que funcionam.</em>",
@@ -303,20 +306,31 @@ function applyLang(lang) {
     localStorage.setItem("lang", lang);
   } catch (e) {}
 
+  updateLangFlag();
+
   window.dispatchEvent(new CustomEvent("langchange", { detail: { lang } }));
+}
+
+const langToggle = document.getElementById("langToggle");
+const langFlag = document.getElementById("langFlag");
+const langOrder = ["es", "en", "pt"];
+const flags = { es: "\uD83C\uDDEA\uD83C\uDDF8", en: "\uD83C\uDDEC\uD83C\uDDE7", pt: "\uD83C\uDDF5\uD83C\uDDF9" };
+
+function updateLangFlag() {
+  if (langFlag) langFlag.textContent = flags[currentLang] || flags.es;
 }
 
 applyLang(currentLang);
 
-const langSelect = document.getElementById("langSelect");
-if (langSelect) langSelect.value = currentLang;
-
-langSelect?.addEventListener("change", () => applyLang(langSelect.value));
+langToggle?.addEventListener("click", () => {
+  const next = langOrder[(langOrder.indexOf(currentLang) + 1) % langOrder.length];
+  applyLang(next);
+});
 
 window.addEventListener("storage", (e) => {
   if (e.key === "lang" && e.newValue) {
     currentLang = e.newValue;
-    if (langSelect) langSelect.value = currentLang;
+    updateLangFlag();
     applyLang(currentLang);
   }
 });
