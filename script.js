@@ -33,3 +33,23 @@ document.querySelectorAll(".reveal").forEach((el, i) => {
 });
 
 document.getElementById("year").textContent = new Date().getFullYear();
+
+const filterButtons = document.querySelectorAll(".filter-btn");
+const projectCards = document.querySelectorAll(".project-card");
+
+filterButtons.forEach(btn => {
+  btn.addEventListener("click", () => {
+    filterButtons.forEach(b => b.classList.remove("active"));
+    btn.classList.add("active");
+    const filter = btn.getAttribute("data-filter");
+
+    projectCards.forEach(card => {
+      const category = card.getAttribute("data-category");
+      if (filter === "all" || category === filter) {
+        card.classList.remove("filtered-out");
+      } else {
+        card.classList.add("filtered-out");
+      }
+    });
+  });
+});
