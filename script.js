@@ -34,6 +34,30 @@ document.querySelectorAll(".reveal").forEach((el, i) => {
 
 document.getElementById("year").textContent = new Date().getFullYear();
 
+const themeToggle = document.getElementById("themeToggle");
+const themeColorMeta = document.querySelector('meta[name="theme-color"]');
+
+function applyTheme(isLight) {
+  document.body.classList.toggle("light", isLight);
+  themeToggle?.setAttribute("aria-pressed", String(isLight));
+  themeColorMeta?.setAttribute("content", isLight ? "#f5f6f2" : "#0b0d12");
+}
+
+let savedTheme;
+try {
+  savedTheme = localStorage.getItem("theme");
+} catch (e) {}
+
+applyTheme(savedTheme === "light");
+
+themeToggle?.addEventListener("click", () => {
+  const isLight = document.body.classList.toggle("light");
+  try {
+    localStorage.setItem("theme", isLight ? "light" : "dark");
+  } catch (e) {}
+  applyTheme(isLight);
+});
+
 const filterButtons = document.querySelectorAll(".filter-btn");
 const projectCards = document.querySelectorAll(".project-card");
 
