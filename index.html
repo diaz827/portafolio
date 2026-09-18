@@ -27,14 +27,21 @@
       </button>
 
       <div class="nav-links">
-        <a href="#sobre-mi">Sobre mí</a>
-        <a href="#proyectos">Proyectos</a>
-        <a href="#juego">Minijuego</a>
-        <a href="#stack">Stack</a>
-        <a href="#educacion">Educación</a>
-        <a href="#experiencia">Experiencia</a>
-        <a href="#contacto">Contacto</a>
-        <button class="theme-toggle" id="themeToggle" aria-label="Cambiar tema oscuro o claro" aria-pressed="false">
+        <a href="#sobre-mi" data-i18n="nav.about">Sobre mí</a>
+        <a href="#proyectos" data-i18n="nav.projects">Proyectos</a>
+        <a href="#juego" data-i18n="nav.minigame">Minijuego</a>
+        <a href="#stack" data-i18n="nav.stack">Stack</a>
+        <a href="#educacion" data-i18n="nav.education">Educación</a>
+        <a href="#experiencia" data-i18n="nav.experience">Experiencia</a>
+        <a href="#contacto" data-i18n="nav.contact">Contacto</a>
+        <div class="lang-select-wrap">
+          <select class="lang-select" id="langSelect" aria-label="Seleccionar idioma">
+            <option value="es">🇪🇸 Español</option>
+            <option value="en">🇬🇧 English</option>
+            <option value="pt">🇵🇹 Português</option>
+          </select>
+        </div>
+        <button class="theme-toggle" id="themeToggle" aria-label="Cambiar tema oscuro o claro" data-i18n-attr="aria-label|theme.toggle" aria-pressed="false">
           <svg class="theme-icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2.5M12 19.5V22M22 12h-2.5M4.5 12H2M19.07 4.93l-1.77 1.77M6.7 17.3l-1.77 1.77M19.07 19.07l-1.77-1.77M6.7 6.7L4.93 4.93"/></svg>
           <svg class="theme-icon-moon" viewBox="0 0 24 24" fill="currentColor"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
         </button>
@@ -45,16 +52,16 @@
   <main id="inicio">
     <section class="hero container">
       <div class="hero-copy reveal">
-        <div class="eyebrow"><span class="pulse"></span> Disponible para FCT · A Coruña</div>
-        <p class="hero-kicker">DESARROLLO WEB / SOFTWARE</p>
-        <h1>Construyo cosas<br><em>que funcionan.</em></h1>
-        <p class="hero-text">
+        <div class="eyebrow"><span class="pulse"></span> <span data-i18n="hero.availability">Disponible para FCT · A Coruña</span></div>
+        <p class="hero-kicker" data-i18n="hero.kicker">DESARROLLO WEB / SOFTWARE</p>
+        <h1 data-i18n="hero.title">Construyo cosas<br><em>que funcionan.</em></h1>
+        <p class="hero-text" data-i18n="hero.text">
           Soy Daniel Díaz Canosa, estudiante de Desarrollo de Aplicaciones Web (DAW).
           Me gusta entender cómo encajan las piezas, resolver problemas y convertir ideas en experiencias web.
         </p>
         <div class="hero-actions">
-          <a class="btn btn-primary" href="#proyectos">Ver proyectos <span>↗</span></a>
-          <a class="btn btn-ghost" href="#contacto">Hablemos</a>
+          <a class="btn btn-primary" href="#proyectos"><span data-i18n="hero.viewProjects">Ver proyectos</span> <span>↗</span></a>
+          <a class="btn btn-ghost" href="#contacto" data-i18n="hero.talk">Hablemos</a>
         </div>
       </div>
 
@@ -70,7 +77,7 @@
           <p><span class="muted">$</span> mindset</p>
           <p class="code-accent">curious · structured · resolutive</p>
           <p><span class="muted">$</span> location</p>
-          <p>Galicia, España <span class="cursor">▋</span></p>
+          <p><span data-i18n="terminal.location">Galicia, España</span> <span class="cursor">▋</span></p>
         </div>
       </div>
     </section>
@@ -88,23 +95,23 @@
       <div class="section-heading reveal">
         <span class="section-number">01</span>
         <div>
-          <p class="eyebrow">Sobre mí</p>
-          <h2>Curiosidad técnica,<br><em>cabeza fría.</em></h2>
+          <p class="eyebrow" data-i18n="about.eyebrow">Sobre mí</p>
+          <h2 data-i18n="about.title">Curiosidad técnica,<br><em>cabeza fría.</em></h2>
         </div>
       </div>
 
       <div class="about-grid">
         <div class="about-main reveal">
-          <p class="lead">
+          <p class="lead" data-i18n="about.lead">
             Tengo 21 años y llevo tiempo intentando entender no solo <strong>qué</strong> hace una tecnología,
             sino <strong>por qué</strong> funciona.
           </p>
-          <p>
+          <p data-i18n="about.p2">
             Antes de pasar al desarrollo web estudié un Grado de Sistemas Electrónicos y Automatizados,
             trabajando con autómatas de Siemens y lógica de sistemas eléctricos. Esa etapa me dejó una forma
             estructurada de pensar y de buscar soluciones.
           </p>
-          <p>
+          <p data-i18n="about.p3">
             También fui árbitro de fútbol durante varios años en el Comité Técnico Gallego.
             Aprendí a decidir bajo presión, comunicarme con claridad y mantener la calma cuando toca resolver
             algo en segundos. Ahora traslado esa experiencia al código.
@@ -114,19 +121,19 @@
         <div class="traits reveal">
           <div class="trait">
             <span class="trait-icon">01</span>
-            <div><strong>Decisión</strong><small>Rápida y objetiva bajo presión</small></div>
+            <div><strong data-i18n="trait1.title">Decisión</strong><small data-i18n="trait1.sub">Rápida y objetiva bajo presión</small></div>
           </div>
           <div class="trait">
             <span class="trait-icon">02</span>
-            <div><strong>Estructura</strong><small>Analizar antes de construir</small></div>
+            <div><strong data-i18n="trait2.title">Estructura</strong><small data-i18n="trait2.sub">Analizar antes de construir</small></div>
           </div>
           <div class="trait">
             <span class="trait-icon">03</span>
-            <div><strong>Comunicación</strong><small>Clara, directa y colaborativa</small></div>
+            <div><strong data-i18n="trait3.title">Comunicación</strong><small data-i18n="trait3.sub">Clara, directa y colaborativa</small></div>
           </div>
           <div class="trait">
             <span class="trait-icon">04</span>
-            <div><strong>Constancia</strong><small>Estudios, deporte y proyectos</small></div>
+            <div><strong data-i18n="trait4.title">Constancia</strong><small data-i18n="trait4.sub">Estudios, deporte y proyectos</small></div>
           </div>
         </div>
       </div>
@@ -137,16 +144,16 @@
         <div class="section-heading reveal">
           <span class="section-number">02</span>
           <div>
-            <p class="eyebrow">Trabajo seleccionado</p>
-            <h2>Proyectos que<br><em>me representan.</em></h2>
+            <p class="eyebrow" data-i18n="proj.eyebrow">Trabajo seleccionado</p>
+            <h2 data-i18n="proj.title">Proyectos que<br><em>me representan.</em></h2>
           </div>
         </div>
 
         <div class="project-filters reveal">
-          <button class="filter-btn active" data-filter="all">Todos</button>
-          <button class="filter-btn" data-filter="web">Web</button>
+          <button class="filter-btn active" data-filter="all" data-i18n="filter.all">Todos</button>
+          <button class="filter-btn" data-filter="web" data-i18n="filter.web">Web</button>
           <button class="filter-btn" data-filter="java">Java</button>
-          <button class="filter-btn" data-filter="frontend">Frontend</button>
+          <button class="filter-btn" data-filter="frontend" data-i18n="filter.frontend">Frontend</button>
         </div>
 
         <div class="projects">
@@ -163,10 +170,10 @@
               </div>
             </div>
             <div class="project-info">
-              <div class="project-meta"><span>WordPress</span><span>Personal</span></div>
+              <div class="project-meta"><span>WordPress</span><span data-i18n="meta.personal">Personal</span></div>
               <h3>MiDiazrio</h3>
-              <p>Blog personal con estética cálida y artesanal, diseño y contenido propios. Un proyecto para explorar WordPress desde la construcción y publicación de contenido hasta la identidad visual.</p>
-              <a class="project-link" href="https://midiazrio.blog/" target="_blank" rel="noopener">Visitar proyecto <span>↗</span></a>
+              <p data-i18n="proj1.desc">Blog personal con estética cálida y artesanal, diseño y contenido propios. Un proyecto para explorar WordPress desde la construcción y publicación de contenido hasta la identidad visual.</p>
+              <a class="project-link" href="https://midiazrio.blog/" target="_blank" rel="noopener"><span data-i18n="link.visit">Visitar proyecto</span> <span>↗</span></a>
             </div>
           </article>
 
@@ -180,10 +187,10 @@
               </div>
             </div>
             <div class="project-info">
-              <div class="project-meta"><span>Java</span><span>Consola</span></div>
+              <div class="project-meta"><span>Java</span><span data-i18n="meta.console">Consola</span></div>
               <h3>Hundir la Flota</h3>
-              <p>Versión en consola del clásico juego contra una CPU, con tableros, colocación de barcos y gestión de disparos.</p>
-              <a class="project-link" href="https://github.com/Ikeer3/hundirFlota" target="_blank" rel="noopener">Ver en GitHub <span>↗</span></a>
+              <p data-i18n="proj2.desc">Versión en consola del clásico juego contra una CPU, con tableros, colocación de barcos y gestión de disparos.</p>
+              <a class="project-link" href="https://github.com/Ikeer3/hundirFlota" target="_blank" rel="noopener"><span data-i18n="link.github">Ver en GitHub</span> <span>↗</span></a>
             </div>
           </article>
 
@@ -195,10 +202,10 @@
               <div class="speed-line two"></div>
             </div>
             <div class="project-info">
-              <div class="project-meta"><span>Java</span><span>Equipo</span></div>
+              <div class="project-meta"><span>Java</span><span data-i18n="meta.team">Equipo</span></div>
               <h3>Competición de Coches</h3>
-              <p>Simulación de un campeonato de F1 con coches, pilotos, circuitos, carreras y clasificaciones por piloto y escudería.</p>
-              <a class="project-link" href="https://github.com/NoamNeo/Competicion-Coches" target="_blank" rel="noopener">Ver proyecto <span>↗</span></a>
+              <p data-i18n="proj3.desc">Simulación de un campeonato de F1 con coches, pilotos, circuitos, carreras y clasificaciones por piloto y escudería.</p>
+              <a class="project-link" href="https://github.com/NoamNeo/Competicion-Coches" target="_blank" rel="noopener"><span data-i18n="link.visit">Ver proyecto</span> <span>↗</span></a>
             </div>
           </article>
 
@@ -211,8 +218,8 @@
             <div class="project-info">
               <div class="project-meta"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
               <h3>Podencos</h3>
-              <p>Web interactiva sobre la raza podenco con diseño Bento Grid, lightbox para imágenes y vídeo de carga con lógica JavaScript adaptada a móvil.</p>
-              <a class="project-link" href="https://github.com/diaz827/podencos" target="_blank" rel="noopener">Ver en GitHub <span>↗</span></a>
+              <p data-i18n="proj4.desc">Web interactiva sobre la raza podenco con diseño Bento Grid, lightbox para imágenes y vídeo de carga con lógica JavaScript adaptada a móvil.</p>
+              <a class="project-link" href="https://github.com/diaz827/podencos" target="_blank" rel="noopener"><span data-i18n="link.github">Ver en GitHub</span> <span>↗</span></a>
             </div>
           </article>
         </div>
@@ -223,8 +230,8 @@
       <div class="section-heading reveal">
         <span class="section-number">03</span>
         <div>
-          <p class="eyebrow">Minijuego interactivo</p>
-          <h2>Flappy Bird<br><em>en JavaScript.</em></h2>
+          <p class="eyebrow" data-i18n="juego.eyebrow">Minijuego interactivo</p>
+          <h2 data-i18n="juego.title">Flappy Bird<br><em>en JavaScript.</em></h2>
         </div>
       </div>
 
@@ -237,8 +244,8 @@
       <div class="section-heading reveal">
         <span class="section-number">04</span>
         <div>
-          <p class="eyebrow">Herramientas</p>
-          <h2>Stack y<br><em>herramientas.</em></h2>
+          <p class="eyebrow" data-i18n="stack.eyebrow">Herramientas</p>
+          <h2 data-i18n="stack.title">Stack y<br><em>herramientas.</em></h2>
         </div>
       </div>
 
@@ -302,8 +309,8 @@
       <div class="section-heading reveal">
         <span class="section-number">05</span>
         <div>
-          <p class="eyebrow">Formación académica</p>
-          <h2>Educación<br><em>y estudios.</em></h2>
+          <p class="eyebrow" data-i18n="edu.eyebrow">Formación académica</p>
+          <h2 data-i18n="edu.title">Educación<br><em>y estudios.</em></h2>
         </div>
       </div>
 
@@ -312,7 +319,7 @@
           <span class="timeline-year">SEPT 2025 - ACTUALIDAD</span>
           <div>
             <h3>Liceo La Paz</h3>
-            <p>Ciclo Formativo de Grado Superior en Desarrollo de Aplicaciones Web</p>
+            <p data-i18n="edu.d1">Ciclo Formativo de Grado Superior en Desarrollo de Aplicaciones Web</p>
             <small>A Coruña</small>
           </div>
         </div>
@@ -321,7 +328,7 @@
           <span class="timeline-year">SEPT 2023 - JUN 2025</span>
           <div>
             <h3>CIFP Universidade Laboral</h3>
-            <p>Ciclo Formativo de Grado Medio en Instalaciones Eléctricas y Automáticas</p>
+            <p data-i18n="edu.d2">Ciclo Formativo de Grado Medio en Instalaciones Eléctricas y Automáticas</p>
             <small>A Coruña</small>
           </div>
         </div>
@@ -330,7 +337,7 @@
           <span class="timeline-year">BACHILLERATO</span>
           <div>
             <h3>IES Rego de Trabe</h3>
-            <p>Bachillerato</p>
+            <p data-i18n="edu.d3">Bachillerato</p>
             <small>A Coruña</small>
           </div>
         </div>
@@ -341,8 +348,8 @@
       <div class="section-heading reveal">
         <span class="section-number">06</span>
         <div>
-          <p class="eyebrow">Trayectoria profesional</p>
-          <h2>Experiencia<br><em>laboral.</em></h2>
+          <p class="eyebrow" data-i18n="exp.eyebrow">Trayectoria profesional</p>
+          <h2 data-i18n="exp.title">Experiencia<br><em>laboral.</em></h2>
         </div>
       </div>
 
@@ -350,50 +357,50 @@
         <div class="timeline-item">
           <span class="timeline-year">AGO 2026 - SEPT 2026</span>
           <div>
-            <h3>Pinche de cocina</h3>
-            <p>Servicio Galego de Saúde - Subdirección Xeral · Interino (2 meses)</p>
+            <h3 data-i18n="exp.j1.title">Pinche de cocina</h3>
+            <p data-i18n="exp.j1.desc">Servicio Galego de Saúde - Subdirección Xeral · Interino (2 meses)</p>
             <small>La Coruña, Galicia, España · Presencial</small>
-            <div class="tags" style="margin-top:10px;"><span>Cocina y Preparación de alimentos</span></div>
+            <div class="tags" style="margin-top:10px;"><span data-i18n="exp.j1.tags">Cocina y Preparación de alimentos</span></div>
           </div>
         </div>
 
         <div class="timeline-item">
           <span class="timeline-year">ENE 2026 - MAR 2026</span>
           <div>
-            <h3>Técnico de mantenimiento</h3>
-            <p>Attica21 Hotels · Jornada parcial (3 meses)</p>
+            <h3 data-i18n="exp.j2.title">Técnico de mantenimiento</h3>
+            <p data-i18n="exp.j2.desc">Attica21 Hotels · Jornada parcial (3 meses)</p>
             <small>Matogrande, La Coruña, España · Presencial</small>
-            <div class="tags" style="margin-top:10px;"><span>Telecomunicaciones</span><span>Mantenimiento y reparaciones</span></div>
+            <div class="tags" style="margin-top:10px;"><span data-i18n="exp.j2.t1">Telecomunicaciones</span><span data-i18n="exp.j2.t2">Mantenimiento y reparaciones</span></div>
           </div>
         </div>
 
         <div class="timeline-item">
           <span class="timeline-year">SEPT 2023 - JUN 2026</span>
           <div>
-            <h3>Árbitro de fútbol</h3>
-            <p>Comité Técnico Gallego de Árbitros de Fútbol · Jornada parcial (2 años 10 meses)</p>
+            <h3 data-i18n="exp.j3.title">Árbitro de fútbol</h3>
+            <p data-i18n="exp.j3.desc">Comité Técnico Gallego de Árbitros de Fútbol · Jornada parcial (2 años 10 meses)</p>
             <small>La Coruña, Galicia, España · Presencial</small>
-            <div class="tags" style="margin-top:10px;"><span>Gestión de conflictos</span><span>Toma de decisiones</span></div>
+            <div class="tags" style="margin-top:10px;"><span data-i18n="exp.j3.t1">Gestión de conflictos</span><span data-i18n="exp.j3.t2">Toma de decisiones</span></div>
           </div>
         </div>
 
         <div class="timeline-item">
           <span class="timeline-year">JUN 2025 - AGO 2025</span>
           <div>
-            <h3>Técnico de mantenimiento</h3>
-            <p>Hesperia World · Jornada parcial (3 meses)</p>
+            <h3 data-i18n="exp.j4.title">Técnico de mantenimiento</h3>
+            <p data-i18n="exp.j4.desc">Hesperia World · Jornada parcial (3 meses)</p>
             <small>La Coruña, Galicia, España · Presencial</small>
-            <div class="tags" style="margin-top:10px;"><span>Mantenimiento de equipo</span><span>Telecomunicaciones</span></div>
+            <div class="tags" style="margin-top:10px;"><span data-i18n="exp.j4.t1">Mantenimiento de equipo</span><span data-i18n="exp.j4.t2">Telecomunicaciones</span></div>
           </div>
         </div>
 
         <div class="timeline-item">
           <span class="timeline-year">ABR 2025 - JUN 2025</span>
           <div>
-            <h3>Técnico de mantenimiento</h3>
-            <p>Attica21 Hotels · Jornada completa (3 meses)</p>
+            <h3 data-i18n="exp.j5.title">Técnico de mantenimiento</h3>
+            <p data-i18n="exp.j5.desc">Attica21 Hotels · Jornada completa (3 meses)</p>
             <small>La Coruña, Galicia, España · Presencial</small>
-            <div class="tags" style="margin-top:10px;"><span>Electricidad Ligera</span><span>Mantenimiento técnico</span></div>
+            <div class="tags" style="margin-top:10px;"><span data-i18n="exp.j5.t1">Electricidad Ligera</span><span data-i18n="exp.j5.t2">Mantenimiento técnico</span></div>
           </div>
         </div>
       </div>
@@ -402,9 +409,9 @@
     <section id="contacto" class="contact-section">
       <div class="container contact-inner reveal">
         <div>
-          <p class="eyebrow">07 / Contacto</p>
-          <h2>¿Construimos<br><em>algo juntos?</em></h2>
-          <p class="contact-text">Estoy buscando una oportunidad de FCT en desarrollo web/software y equipos donde seguir aprendiendo y aportar una mentalidad resolutiva.</p>
+          <p class="eyebrow"><span>07 / </span><span data-i18n="contact.eyebrow">Contacto</span></p>
+          <h2 data-i18n="contact.title">¿Construimos<br><em>algo juntos?</em></h2>
+          <p class="contact-text" data-i18n="contact.text">Estoy buscando una oportunidad de FCT en desarrollo web/software y equipos donde seguir aprendiendo y aportar una mentalidad resolutiva.</p>
         </div>
         <div class="contact-actions">
           <img src="diazfoto.jpg" alt="Daniel Díaz Canosa" class="contact-photo">
@@ -420,8 +427,8 @@
 
   <footer class="footer container">
     <span>© <span id="year"></span> Díaz</span>
-    <span>Hecho con HTML · CSS · JavaScript</span>
-    <a href="#inicio">Volver arriba ↑</a>
+    <span data-i18n="footer.made">Hecho con HTML · CSS · JavaScript</span>
+    <a href="#inicio" data-i18n="footer.top">Volver arriba ↑</a>
   </footer>
 
   <script src="script.js"></script>

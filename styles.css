@@ -34,6 +34,10 @@ body:before{content:"";position:fixed;inset:0;background:radial-gradient(circle 
 .theme-icon-moon{display:block}
 body.light .theme-icon-sun{display:block}
 body.light .theme-icon-moon{display:none}
+.lang-select-wrap{display:inline-flex;align-items:center;position:relative;height:36px;border:1px solid var(--line);border-radius:10px;background:var(--surface-2);overflow:hidden}
+.lang-select{appearance:none;-webkit-appearance:none;background:transparent;border:0;color:var(--text);font-family:"Space Grotesk",sans-serif;font-size:13px;font-weight:600;padding:0 28px 0 10px;height:36px;cursor:pointer;outline:none}
+.lang-select-wrap::after{content:"";position:absolute;right:10px;top:50%;width:7px;height:7px;border-right:2px solid var(--muted);border-bottom:2px solid var(--muted);transform:translateY(-70%) rotate(45deg);pointer-events:none}
+.lang-select option{background:var(--surface-2);color:var(--text)}
 .menu-toggle{display:none;background:none;border:0}
 .hero{min-height:780px;padding-top:160px;display:grid;grid-template-columns:1.15fr .85fr;align-items:center;gap:70px}
 .eyebrow,.hero-kicker{font-size:11px;letter-spacing:.18em;text-transform:uppercase;font-weight:700}

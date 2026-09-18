@@ -163,7 +163,7 @@
 
 <div class="game-wrapper" id="wrapper">
 
-  <a href="index.html" class="back-btn">← Volver</a>
+  <a href="index.html" class="back-btn" data-i18n="j.back">← Volver</a>
 
   <canvas id="game"></canvas>
 
@@ -173,25 +173,85 @@
   <!-- START -->
   <div class="overlay" id="startOverlay">
     <h1>Flappy Bird</h1>
-    <p>
+    <p data-i18n="j.instructions">
       Toca, haz clic o pulsa Espacio<br>
       para volar
     </p>
-    <button id="startBtn">Jugar</button>
+    <button id="startBtn" data-i18n="j.play">Jugar</button>
   </div>
 
   <!-- GAME OVER -->
   <div class="overlay hidden" id="gameOverOverlay">
-    <h1>Game Over</h1>
-    <p class="score-tag" id="finalScore">Puntuación: 0</p>
-    <p id="bestScore">Mejor: 0</p>
-    <button id="retryBtn">Reintentar</button>
+    <h1 data-i18n="j.gameover">Game Over</h1>
+    <p class="score-tag" id="finalScore"></p>
+    <p id="bestScore"></p>
+    <button id="retryBtn" data-i18n="j.retry">Reintentar</button>
   </div>
 
 </div>
 
 <script>
 (function () {
+  // ─── i18n ─────────────────────────────────────────────────────────────────
+  const jtranslations = {
+    es: {
+      "j.back": "← Volver",
+      "j.instructions": "Toca, haz clic o pulsa Espacio<br>para volar",
+      "j.play": "Jugar",
+      "j.gameover": "Game Over",
+      "j.score": "Puntuación",
+      "j.best": "Mejor",
+      "j.retry": "Reintentar"
+    },
+    en: {
+      "j.back": "← Back",
+      "j.instructions": "Tap, click or press Space<br>to fly",
+      "j.play": "Play",
+      "j.gameover": "Game Over",
+      "j.score": "Score",
+      "j.best": "Best",
+      "j.retry": "Retry"
+    },
+    pt: {
+      "j.back": "← Voltar",
+      "j.instructions": "Toque, clique ou prima Espaço<br>para voar",
+      "j.play": "Jogar",
+      "j.gameover": "Game Over",
+      "j.score": "Pontuação",
+      "j.best": "Melhor",
+      "j.retry": "Repetir"
+    }
+  };
+
+  let jlang = "es";
+  try {
+    jlang = localStorage.getItem("lang") || "es";
+  } catch (e) {}
+
+  function jdict() {
+    return jtranslations[jlang] || jtranslations.es;
+  }
+
+  function applyJLang() {
+    const d = jdict();
+    document.querySelectorAll("[data-i18n]").forEach(el => {
+      const key = el.getAttribute("data-i18n");
+      if (d[key] !== undefined) el.innerHTML = d[key];
+    });
+  }
+
+  function t(key) {
+    return jdict()[key] || key;
+  }
+
+  window.addEventListener("storage", (e) => {
+    if (e.key === "lang" && e.newValue) {
+      jlang = e.newValue;
+      applyJLang();
+    }
+  });
+
+  // ─── Juego ───────────────────────────────────────────────────────────────────
   const canvas = document.getElementById('game');
   const ctx = canvas.getContext('2d');
   const hud = document.getElementById('hud');
@@ -307,8 +367,8 @@
       } catch (e) {}
     }
 
-    finalScoreEl.textContent = 'Puntuación: ' + score;
-    bestScoreEl.textContent = 'Mejor: ' + bestScore;
+    finalScoreEl.textContent = t('j.score') + ': ' + score;
+    bestScoreEl.textContent = t('j.best') + ': ' + bestScore;
     gameOverOverlay.classList.remove('hidden');
   }
 
@@ -524,10 +584,11 @@
     }, 120);
   });
 
-  bestScoreEl.textContent = 'Mejor: ' + bestScore;
+  bestScoreEl.textContent = t('j.best') + ': ' + bestScore;
   state = 'idle';
   resetGame();
   draw();
+  applyJLang();
 })();
 </script>
 
