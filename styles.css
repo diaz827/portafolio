@@ -38,7 +38,7 @@ body:before{content:"";position:fixed;inset:0;background:radial-gradient(circle 
 body.light .theme-icon-sun{display:block}
 body.light .theme-icon-moon{display:none}
 .menu-toggle{display:none;background:none;border:0}
-.hero{min-height:780px;padding-top:160px;display:grid;grid-template-columns:1.15fr .85fr;align-items:center;gap:70px}
+.hero{min-height:780px;padding-top:115px;display:grid;grid-template-columns:1.15fr .85fr;align-items:center;gap:70px}
 .eyebrow,.hero-kicker{font-size:11px;letter-spacing:.18em;text-transform:uppercase;font-weight:700}
 .eyebrow{color:var(--accent)}
 .hero-kicker{color:#6f747f;margin:28px 0 14px}
