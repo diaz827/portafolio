@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio de Daniel Díaz Canosa — estudiante de Desarrollo de Aplicaciones Web (DAW), proyectos web y Java.">
+  <meta name="theme-color" content="#0b0d12">
+  <title>Daniel Díaz Canosa — Web Developer Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" href="favicon.png">
+</head>
+<body>
+  <div class="noise"></div>
+
+  <header class="site-header">
+    <nav class="nav container" aria-label="Navegación principal">
+      <a class="brand" href="#inicio" aria-label="Díaz, inicio">
+        <span class="brand-mark">D</span>
+        <span>Díaz<span class="dot">.</span></span>
+      </a>
+
+      <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+
+      <div class="nav-links">
+        <a href="#sobre-mi">Sobre mí</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#juego">Minijuego</a>
+        <a href="#stack">Stack</a>
+        <a href="#educacion">Educación</a>
+        <a href="#experiencia">Experiencia</a>
+        <a href="#contacto">Contacto</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="inicio">
+    <section class="hero container">
+      <div class="hero-copy reveal">
+        <div class="eyebrow"><span class="pulse"></span> Disponible para FCT · A Coruña</div>
+        <p class="hero-kicker">DESARROLLO WEB / SOFTWARE</p>
+        <h1>Construyo cosas<br><em>que funcionan.</em></h1>
+        <p class="hero-text">
+          Soy Daniel Díaz Canosa, estudiante de Desarrollo de Aplicaciones Web (DAW).
+          Me gusta entender cómo encajan las piezas, resolver problemas y convertir ideas en experiencias web.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#proyectos">Ver proyectos <span>↗</span></a>
+          <a class="btn btn-ghost" href="#contacto">Hablemos</a>
+        </div>
+      </div>
+
+      <div class="hero-card reveal">
+        <div class="terminal-top">
+          <span></span><span></span><span></span>
+        </div>
+        <div class="terminal-body">
+          <p><span class="muted">$</span> whoami</p>
+          <p class="code-accent">Daniel Díaz Canosa</p>
+          <p><span class="muted">$</span> role</p>
+          <p>Web Developer · DAW</p>
+          <p><span class="muted">$</span> mindset</p>
+          <p class="code-accent">curious · structured · resolutive</p>
+          <p><span class="muted">$</span> location</p>
+          <p>Galicia, España <span class="cursor">▋</span></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="ticker" aria-label="Tecnologías">
+      <div class="ticker-track">
+        <span>HTML</span><i>✦</i><span>CSS</span><i>✦</i><span>JavaScript</span><i>✦</i>
+        <span>Java</span><i>✦</i><span>WordPress</span><i>✦</i><span>Git</span><i>✦</i>
+        <span>HTML</span><i>✦</i><span>CSS</span><i>✦</i><span>JavaScript</span><i>✦</i>
+        <span>Java</span><i>✦</i><span>WordPress</span><i>✦</i><span>Git</span><i>✦</i>
+      </div>
+    </section>
+
+    <section id="sobre-mi" class="section container">
+      <div class="section-heading reveal">
+        <span class="section-number">01</span>
+        <div>
+          <p class="eyebrow">Sobre mí</p>
+          <h2>Curiosidad técnica,<br><em>cabeza fría.</em></h2>
+        </div>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-main reveal">
+          <p class="lead">
+            Tengo 21 años y llevo tiempo intentando entender no solo <strong>qué</strong> hace una tecnología,
+            sino <strong>por qué</strong> funciona.
+          </p>
+          <p>
+            Antes de pasar al desarrollo web estudié un Grado de Sistemas Electrónicos y Automatizados,
+            trabajando con autómatas de Siemens y lógica de sistemas eléctricos. Esa etapa me dejó una forma
+            estructurada de pensar y de buscar soluciones.
+          </p>
+          <p>
+            También fui árbitro de fútbol durante varios años en el Comité Técnico Gallego.
+            Aprendí a decidir bajo presión, comunicarme con claridad y mantener la calma cuando toca resolver
+            algo en segundos. Ahora traslado esa experiencia al código.
+          </p>
+        </div>
+
+        <div class="traits reveal">
+          <div class="trait">
+            <span class="trait-icon">01</span>
+            <div><strong>Decisión</strong><small>Rápida y objetiva bajo presión</small></div>
+          </div>
+          <div class="trait">
+            <span class="trait-icon">02</span>
+            <div><strong>Estructura</strong><small>Analizar antes de construir</small></div>
+          </div>
+          <div class="trait">
+            <span class="trait-icon">03</span>
+            <div><strong>Comunicación</strong><small>Clara, directa y colaborativa</small></div>
+          </div>
+          <div class="trait">
+            <span class="trait-icon">04</span>
+            <div><strong>Constancia</strong><small>Estudios, deporte y proyectos</small></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="proyectos" class="section projects-section">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="section-number">02</span>
+          <div>
+            <p class="eyebrow">Trabajo seleccionado</p>
+            <h2>Proyectos que<br><em>me representan.</em></h2>
+          </div>
+        </div>
+
+        <div class="projects">
+          <article class="project-card project-featured reveal">
+            <div class="project-visual visual-web">
+              <span class="visual-label">01 / WEB</span>
+              <div class="browser">
+                <div class="browser-bar"><span></span><span></span><span></span></div>
+                <div class="browser-content">
+                  <div class="mini-line w70"></div>
+                  <div class="mini-line w45"></div>
+                  <div class="mini-grid"><span></span><span></span><span></span></div>
+                </div>
+              </div>
+            </div>
+            <div class="project-info">
+              <div class="project-meta"><span>WordPress</span><span>Personal</span></div>
+              <h3>MiDiazrio</h3>
+              <p>Blog personal con estética cálida y artesanal, diseño y contenido propios. Un proyecto para explorar WordPress desde la construcción y publicación de contenido hasta la identidad visual.</p>
+              <a class="project-link" href="https://midiazrio.blog/" target="_blank" rel="noopener">Visitar proyecto <span>↗</span></a>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-visual visual-java">
+              <span class="visual-label">02 / JAVA</span>
+              <div class="code-window">
+                <span class="line l1"></span><span class="line l2"></span><span class="line l3"></span>
+                <span class="line l4"></span><span class="line l5"></span>
+                <b>class</b>
+              </div>
+            </div>
+            <div class="project-info">
+              <div class="project-meta"><span>Java</span><span>Consola</span></div>
+              <h3>Hundir la Flota</h3>
+              <p>Versión en consola del clásico juego contra una CPU, con tableros, colocación de barcos y gestión de disparos.</p>
+              <a class="project-link" href="https://github.com/Ikeer3/hundirFlota" target="_blank" rel="noopener">Ver en GitHub <span>↗</span></a>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-visual visual-race">
+              <span class="visual-label">03 / JAVA</span>
+              <div class="race-number">01</div>
+              <div class="speed-line"></div>
+              <div class="speed-line two"></div>
+            </div>
+            <div class="project-info">
+              <div class="project-meta"><span>Java</span><span>Equipo</span></div>
+              <h3>Competición de Coches</h3>
+              <p>Simulación de un campeonato de F1 con coches, pilotos, circuitos, carreras y clasificaciones por piloto y escudería.</p>
+              <a class="project-link" href="https://github.com/NoamNeo/Competicion-Coches" target="_blank" rel="noopener">Ver proyecto <span>↗</span></a>
+            </div>
+          </article>
+
+          <article class="project-card project-wide reveal">
+            <div class="project-visual visual-dog">
+              <span class="visual-label">04 / FRONTEND</span>
+              <div class="dog-shape">🐕</div>
+              <div class="bento-mini"><span></span><span></span><span></span><span></span></div>
+            </div>
+            <div class="project-info">
+              <div class="project-meta"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+              <h3>Podencos</h3>
+              <p>Web interactiva sobre la raza podenco con diseño Bento Grid, lightbox para imágenes y vídeo de carga con lógica JavaScript adaptada a móvil.</p>
+              <a class="project-link" href="https://github.com/diaz827/podencos" target="_blank" rel="noopener">Ver en GitHub <span>↗</span></a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="juego" class="section container">
+      <div class="section-heading reveal">
+        <span class="section-number">03</span>
+        <div>
+          <p class="eyebrow">Minijuego interactivo</p>
+          <h2>Flappy Bird<br><em>en JavaScript.</em></h2>
+        </div>
+      </div>
+
+      <div class="reveal" style="border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; background: var(--surface); height: 520px; position: relative;">
+        <iframe src="juego.html" style="width: 100%; height: 100%; border: none; display: block;" title="Flappy Bird Minigame"></iframe>
+      </div>
+    </section>
+
+    <section id="stack" class="section container">
+      <div class="section-heading reveal">
+        <span class="section-number">04</span>
+        <div>
+          <p class="eyebrow">Herramientas</p>
+          <h2>Stack y<br><em>herramientas.</em></h2>
+        </div>
+      </div>
+
+      <div class="tech-badges reveal">
+        <div class="tech-badge" style="background: #E34F26; color: #fff;">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M1.5 0h21l-1.91 21.563L12.01 24l-8.58-2.437L1.5 0zm17.09 5.813H6.9l.11 1.438h11.4l-.52 6.562-5.89 1.625-5.89-1.625-.36-4.313H8.5l.2 2.688 3.31.938 3.31-.938.44-5.188H7.31L7.1 4.375h11.69l-.2 1.438z"/></svg>
+          HTML5
+        </div>
+        <div class="tech-badge" style="background: #1572B6; color: #fff;">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M1.5 0h21l-1.91 21.563L12.01 24l-8.58-2.437L1.5 0zm17.09 5.813H6.9l.11 1.438h11.4l-.52 6.562-5.89 1.625-5.89-1.625-.36-4.313H8.5l.2 2.688 3.31.938 3.31-.938.44-5.188H7.31L7.1 4.375h11.69l-.2 1.438z"/></svg>
+          CSS3
+        </div>
+        <div class="tech-badge" style="background: #F7DF1E; color: #111;">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M3 3h18v18H3V3zm10.73 13.36c.39.23.85.39 1.36.39.75 0 1.22-.38 1.22-.96 0-.64-.51-.87-1.37-1.25l-.47-.21c-1.15-.51-1.91-1.15-1.91-2.5 0-1.29 1.01-2.23 2.61-2.23.7 0 1.32.2 1.77.49l-.5 1.05c-.32-.21-.76-.36-1.27-.36-.59 0-.97.31-.97.83 0 .49.33.72 1.18 1.09l.47.21c1.37.6 2.11 1.22 2.11 2.67 0 1.41-1.07 2.36-2.82 2.36-.85 0-1.61-.25-2.12-.58l.51-1.12zM9.59 15.7c-.32.19-.71.3-1.17.3-.87 0-1.42-.43-1.42-1.31V9.25h1.59v5.27c0 .35.18.53.5.53.22 0 .39-.07.5-.14l.6 1.3z"/></svg>
+          JAVASCRIPT
+        </div>
+        <div class="tech-badge" style="background: #61DAFB; color: #111;">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-3.3 0-6 2.7-6 6 0 2.2 1.2 4.1 3 5.1C6 13.5 3.5 16.5 3.5 20c0 2.2 1.8 4 4 4 1.8 0 3.3-1.2 3.8-2.9.2.1.4.1.7.1 3.3 0 6-2.7 6-6 0-2.2-1.2-4.1-3-5.1 3-2.4 5.5-5.4 5.5-8.9 0-2.2-1.8-4-4-4zm0 2c1.7 0 3 1.3 3 3s-1.3 3-3 3-3-1.3-3-3 1.3-3 3-3zm0 18c-1.7 0-3-1.3-3-3s1.3-3 3-3 3 1.3 3 3-1.3 3-3 3z"/></svg>
+          REACT
+        </div>
+        <div class="tech-badge" style="background: #EA2D2E; color: #fff;">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+          JAVA
+        </div>
+        <div class="tech-badge" style="background: #4479A1; color: #fff;">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 4.69 2 8v8c0 3.31 4.48 6 10 6s10-2.69 10-6V8c0-3.31-4.48-6-10-6zm0 2c4.41 0 8 1.79 8 4s-3.59 4-8 4-8-1.79-8-4 3.59-4 8-4zm0 16c-4.41 0-8-1.79-8-4v-2.1c1.58 1.33 4.61 2.1 8 2.1s6.42-.77 8-2.1V16c0 2.21-3.59 4-8 4zm0-6c-4.41 0-8-1.79-8-4s3.59-4 8-4 8 1.79 8 4-3.59 4-8 4z"/></svg>
+          SQL
+        </div>
+        <div class="tech-badge" style="background: #F05032; color: #fff;">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M2.38 12.83l9.79 9.8 9.8-9.8c3.83-3.83 3.83-10.05 0-13.88s-10.05-3.83-13.88 0c-3.83 3.83-3.83 10.05 0 13.88z"/></svg>
+          GIT
+        </div>
+        <div class="tech-badge" style="background: #181717; color: #fff; border: 1px solid rgba(255,255,255,0.2);">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+          GITHUB
+        </div>
+        <div class="tech-badge" style="background: #007ACC; color: #fff;">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M23.15 2.58L18.21.21a1.5 1.5 0 00-1.59.27L9.9 6.84 4.54 3.09A1.5 1.5 0 002.32 4.5v15a1.5 1.5 0 002.22 1.41l5.36-3.75 6.72 6.36a1.5 1.5 0 001.59.27l4.94-2.37A1.5 1.5 0 0024 20.25V3.75a1.5 1.5 0 00-.85-1.17z"/></svg>
+          VS CODE
+        </div>
+        <div class="tech-badge" style="background: #2496ED; color: #fff;">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M13 7h-2v2h2V7zm0 4h-2v2h2v-2zm4 0h-2v2h2v-2zM9 11H7v2h2v-2zm12-4h-2V5h-2v2h-2V5h-2v2H7V5H5v2H3v2h2v2H3v2h2v2h2v2h10v-2h2v-2h2v-2h-2v-2h2V7h-2V5h2v2z"/></svg>
+          DOCKER
+        </div>
+      </div>
+    </section>
+
+    <section id="educacion" class="section container">
+      <div class="section-heading reveal">
+        <span class="section-number">05</span>
+        <div>
+          <p class="eyebrow">Formación académica</p>
+          <h2>Educación<br><em>y estudios.</em></h2>
+        </div>
+      </div>
+
+      <div class="timeline reveal">
+        <div class="timeline-item">
+          <span class="timeline-year">SEPT 2025 - ACTUALIDAD</span>
+          <div>
+            <h3>Liceo La Paz</h3>
+            <p>Ciclo Formativo de Grado Superior en Desarrollo de Aplicaciones Web</p>
+            <small>A Coruña</small>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <span class="timeline-year">SEPT 2023 - JUN 2025</span>
+          <div>
+            <h3>CIFP Universidade Laboral</h3>
+            <p>Ciclo Formativo de Grado Medio en Instalaciones Eléctricas y Automáticas</p>
+            <small>A Coruña</small>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <span class="timeline-year">BACHILLERATO</span>
+          <div>
+            <h3>IES Rego de Trabe</h3>
+            <p>Bachillerato</p>
+            <small>A Coruña</small>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experiencia" class="section container">
+      <div class="section-heading reveal">
+        <span class="section-number">06</span>
+        <div>
+          <p class="eyebrow">Trayectoria profesional</p>
+          <h2>Experiencia<br><em>laboral.</em></h2>
+        </div>
+      </div>
+
+      <div class="timeline reveal">
+        <div class="timeline-item">
+          <span class="timeline-year">AGO 2026 - SEPT 2026</span>
+          <div>
+            <h3>Pinche de cocina</h3>
+            <p>Servicio Galego de Saúde - Subdirección Xeral · Interino (2 meses)</p>
+            <small>La Coruña, Galicia, España · Presencial</small>
+            <div class="tags" style="margin-top:10px;"><span>Cocina y Preparación de alimentos</span></div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <span class="timeline-year">ENE 2026 - MAR 2026</span>
+          <div>
+            <h3>Técnico de mantenimiento</h3>
+            <p>Attica21 Hotels · Jornada parcial (3 meses)</p>
+            <small>Matogrande, La Coruña, España · Presencial</small>
+            <div class="tags" style="margin-top:10px;"><span>Telecomunicaciones</span><span>Mantenimiento y reparaciones</span></div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <span class="timeline-year">SEPT 2023 - JUN 2026</span>
+          <div>
+            <h3>Árbitro de fútbol</h3>
+            <p>Comité Técnico Gallego de Árbitros de Fútbol · Jornada parcial (2 años 10 meses)</p>
+            <small>La Coruña, Galicia, España · Presencial</small>
+            <div class="tags" style="margin-top:10px;"><span>Gestión de conflictos</span><span>Toma de decisiones</span></div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <span class="timeline-year">JUN 2025 - AGO 2025</span>
+          <div>
+            <h3>Técnico de mantenimiento</h3>
+            <p>Hesperia World · Jornada parcial (3 meses)</p>
+            <small>La Coruña, Galicia, España · Presencial</small>
+            <div class="tags" style="margin-top:10px;"><span>Mantenimiento de equipo</span><span>Telecomunicaciones</span></div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <span class="timeline-year">ABR 2025 - JUN 2025</span>
+          <div>
+            <h3>Técnico de mantenimiento</h3>
+            <p>Attica21 Hotels · Jornada completa (3 meses)</p>
+            <small>La Coruña, Galicia, España · Presencial</small>
+            <div class="tags" style="margin-top:10px;"><span>Electricidad Ligera</span><span>Mantenimiento técnico</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto" class="contact-section">
+      <div class="container contact-inner reveal">
+        <div>
+          <p class="eyebrow">07 / Contacto</p>
+          <h2>¿Construimos<br><em>algo juntos?</em></h2>
+          <p class="contact-text">Estoy buscando una oportunidad de FCT en desarrollo web/software y equipos donde seguir aprendiendo y aportar una mentalidad resolutiva.</p>
+        </div>
+        <div class="contact-actions">
+          <img src="diazfoto.jpg" alt="Daniel Díaz Canosa" class="contact-photo">
+          <a class="email-link" href="mailto:canosadiaz6@gmail.com">canosadiaz6@gmail.com <span>↗</span></a>
+          <div class="socials">
+            <a href="https://github.com/diaz827" target="_blank" rel="noopener">GitHub</a>
+            <a href="https://www.linkedin.com/in/dani-d%C3%ADaz-canosa-4465793b2/" target="_blank" rel="noopener">LinkedIn</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer container">
+    <span>© <span id="year"></span> Díaz</span>
+    <span>Hecho con HTML · CSS · JavaScript</span>
+    <a href="#inicio">Volver arriba ↑</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
