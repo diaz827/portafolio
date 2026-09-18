@@ -68,15 +68,14 @@ h1 em,h2 em{font-style:normal;color:var(--accent)}
 .section-heading{display:grid;grid-template-columns:100px 1fr;gap:25px;align-items:start;margin-bottom:70px}
 .section-number{font-family:"Space Grotesk";font-size:12px;color:#626873;padding-top:6px}
 .section-heading h2{font-size:clamp(44px,6vw,78px);margin-top:9px}
-.about-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:100px}
+.about-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:90px}
 .about-main{max-width:680px}
+.about-heading{margin-bottom:44px}
 .about-main p{color:var(--muted);font-size:16px;margin-bottom:20px}
 .about-main .lead{font-size:25px;line-height:1.35;color:var(--text);letter-spacing:-.02em}
 .about-main strong{color:var(--text)}
-.traits{border-top:1px solid var(--line)}
-.trait{display:flex;gap:20px;align-items:center;padding:20px 0;border-bottom:1px solid var(--line)}
-.trait-icon{font-family:"Space Grotesk";font-size:11px;color:var(--accent)}
-.trait strong{display:block;font-size:15px}.trait small{color:#777c86}
+.about-photo{display:block;position:relative;overflow:hidden;border-radius:20px;border:2px solid var(--accent);box-shadow:0 0 0 1px rgba(184,243,90,0.25),0 0 30px rgba(184,243,90,0.35),0 0 60px rgba(184,243,90,0.15)}
+.about-photo img{display:block;width:100%;height:100%;object-fit:cover;object-position:top}
 .projects-section{background:#0f1117;border-block:1px solid var(--line)}
 .projects{display:grid;grid-template-columns:1fr 1fr;gap:20px}
 .project-card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;transition:.3s}
@@ -137,7 +136,6 @@ body.light .hero-card{background:linear-gradient(145deg,#ffffff,#f0f1ec)}
 body.light .hero-kicker{color:#8a8f99}
 body.light .projects-section{background:#eef0ea}
 body.light .ticker-track{color:#6a707b}
-body.light .trait small{color:#6a707b}
 body.light .section-number,.terminal-top small{color:#8a8f99}
 body.light .project-meta span{color:#6a707b}
 body.light .btn-ghost:hover{border-color:rgba(10,15,25,.3)}
