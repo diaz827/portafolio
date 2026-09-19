@@ -54,7 +54,8 @@ h2 em{font-style:normal;color:var(--accent)}
 .btn-primary:hover{transform:translateY(-2px);box-shadow:0 12px 35px rgba(184,243,90,.15)}
 .btn-ghost{border:1px solid var(--line);color:var(--text)}
 .btn-ghost:hover{border-color:rgba(255,255,255,.25)}
-.hero-card{border:1px solid var(--line);background:linear-gradient(145deg,#141820,#0e1016);border-radius:20px;overflow:hidden;box-shadow:0 30px 90px rgba(0,0,0,.25)}
+.hero-side{display:flex;flex-direction:column;gap:34px;align-items:flex-start;width:100%}
+.hero-card{border:1px solid var(--line);background:linear-gradient(145deg,#141820,#0e1016);border-radius:20px;overflow:hidden;box-shadow:0 30px 90px rgba(0,0,0,.25);width:100%}
 .terminal-top{height:48px;border-bottom:1px solid var(--line);display:flex;align-items:center;gap:7px;padding:0 16px}
 .terminal-top span{width:8px;height:8px;border-radius:50%;background:#555}
 .terminal-top small{margin-left:auto;color:#626873;font-family:monospace;font-size:11px}
