@@ -340,7 +340,7 @@ const themeColorMeta = document.querySelector('meta[name="theme-color"]');
 function applyTheme(isLight) {
   document.body.classList.toggle("light", isLight);
   themeToggle?.setAttribute("aria-pressed", String(isLight));
-  themeColorMeta?.setAttribute("content", isLight ? "#f5f6f2" : "#0b0d12");
+  themeColorMeta?.setAttribute("content", isLight ? "#f5f6f2" : "#121316");
 }
 
 let savedTheme;
