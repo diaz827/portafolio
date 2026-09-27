@@ -38,22 +38,17 @@ body:before{content:"";position:fixed;inset:0;background:radial-gradient(circle 
 body.light .theme-icon-sun{display:block}
 body.light .theme-icon-moon{display:none}
 .menu-toggle{display:none;background:none;border:0}
-.hero{min-height:780px;padding-top:115px;display:grid;grid-template-columns:1.15fr .85fr;align-items:center;gap:70px}
+.hero{min-height:750px;padding-top:130px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:45px}
+.hero-copy{max-width:850px;margin:0 auto;display:flex;flex-direction:column;align-items:center;text-align:center}
 .eyebrow,.hero-kicker{font-size:11px;letter-spacing:.18em;text-transform:uppercase;font-weight:700}
 .eyebrow{color:var(--accent)}
 .hero-kicker{color:#6f747f;margin:28px 0 14px}
 .pulse{display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--accent);margin-right:8px;box-shadow:0 0 0 5px rgba(184,243,90,.08)}
 h1,h2,h3{font-family:"Space Grotesk",sans-serif;line-height:1.03;letter-spacing:-.045em}
-h1{font-size:clamp(58px,8vw,112px);max-width:850px}
+h1{font-size:clamp(48px,7.5vw,96px);max-width:900px}
 h1 em,h2 em{font-style:normal;color:var(--accent)}
-.hero-text{color:var(--muted);max-width:600px;font-size:17px;margin-top:28px}
-.hero-actions{display:flex;gap:12px;margin-top:36px}
-.btn{display:inline-flex;align-items:center;gap:16px;padding:14px 19px;border-radius:12px;text-decoration:none;font-weight:700;font-size:14px;transition:.25s}
-.btn-primary{background:var(--accent);color:#0b0d12}
-.btn-primary:hover{transform:translateY(-2px);box-shadow:0 12px 35px rgba(184,243,90,.15)}
-.btn-ghost{border:1px solid var(--line);color:var(--text)}
-.btn-ghost:hover{border-color:rgba(255,255,255,.25)}
-.hero-card{border:1px solid var(--line);background:linear-gradient(145deg,#141820,#0e1016);border-radius:20px;overflow:hidden;box-shadow:0 30px 90px rgba(0,0,0,.25)}
+.hero-text{color:var(--muted);max-width:680px;font-size:18px;margin-top:28px;text-align:center;margin-left:auto;margin-right:auto}
+.hero-card{border:1px solid var(--line);background:linear-gradient(145deg,#141820,#0e1016);border-radius:20px;overflow:hidden;box-shadow:0 30px 90px rgba(0,0,0,.25);max-width:640px;width:100%;margin:0 auto}
 .terminal-top{height:48px;border-bottom:1px solid var(--line);display:flex;align-items:center;gap:7px;padding:0 16px}
 .terminal-top span{width:8px;height:8px;border-radius:50%;background:#555}
 .terminal-top small{margin-left:auto;color:#626873;font-family:monospace;font-size:11px}
