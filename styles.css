@@ -201,7 +201,7 @@ body.light .contact-section{background:linear-gradient(120deg,#f6f8fd,#eef2fb)}
 }
 @media(max-width:600px){
   h1{font-size:clamp(34px,8.5vw,54px)}.section{padding:90px 0}.section-heading{grid-template-columns:45px 1fr;gap:10px;margin-bottom:45px}.section-heading h2{font-size:45px}
-  .hero-text{font-size:15px}.hero-actions{flex-wrap:wrap}.ticker-track{justify-content:flex-start}
+  .hero-text{font-size:17px}.hero-actions{flex-wrap:wrap}.ticker-track{justify-content:flex-start}
   .stack-grid{grid-template-columns:1fr}.stack-card{border-right:0!important;border-bottom:1px solid var(--line)}.stack-card:last-child{border-bottom:0}
   .timeline-item{grid-template-columns:1fr;gap:10px}.timeline-year{padding-top:0}
   .footer{flex-direction:column;gap:8px}.contact-section{padding:90px 0}
