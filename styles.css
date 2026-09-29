@@ -35,7 +35,7 @@
 }
 
 [data-theme="dark"] {
-  --bg-main: #1F1E1D;
+  --bg-main: #000000;
   --bg-surface: #2C2A29;
   --bg-surface-hover: #3A3735;
   --border: #45413E;
@@ -53,7 +53,7 @@ body{background:var(--bg);color:var(--text);font-family:"DM Sans",sans-serif;lin
 body:before{content:"";position:fixed;inset:0;background:radial-gradient(circle at 80% 10%,rgba(217,119,87,.08),transparent 28%),radial-gradient(circle at 10% 45%,rgba(217,119,87,.05),transparent 30%);pointer-events:none;z-index:-2}
 .noise{position:fixed;inset:0;opacity:.035;pointer-events:none;z-index:20;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.55'/%3E%3C/svg%3E")}
 .container{width:min(calc(100% - 48px),var(--max));margin:auto}
-.site-header{position:fixed;top:0;left:0;width:100%;z-index:10;background:rgba(31,30,29,.72);backdrop-filter:blur(18px);border-bottom:1px solid transparent;transition:.3s}
+.site-header{position:fixed;top:0;left:0;width:100%;z-index:10;background:rgba(0,0,0,.72);backdrop-filter:blur(18px);border-bottom:1px solid transparent;transition:.3s}
 .site-header.scrolled{border-color:var(--line)}
 .nav{height:78px;display:flex;align-items:center;justify-content:space-between}
 .brand{display:flex;align-items:center;gap:10px;color:var(--text);text-decoration:none;font-family:"Space Grotesk";font-weight:700;font-size:19px}
@@ -165,7 +165,7 @@ h1 em,h2 em{font-style:normal;color:var(--accent)}
 .timeline{max-width:900px;margin-left:100px;border-top:1px solid var(--line)}
 .timeline-item{display:grid;grid-template-columns:150px 1fr;gap:30px;padding:30px 0;border-bottom:1px solid var(--line)}
 .timeline-year{font:700 10px "Space Grotesk";color:var(--accent);letter-spacing:.12em;padding-top:4px}.timeline h3{font-size:23px;letter-spacing:-.02em}.timeline p{color:#e2e1dc;font-size:13px;margin:5px 0}.timeline small{color:var(--muted);font-size:13px}
-.contact-section{border-top:1px solid var(--line);background:linear-gradient(120deg,#2C2A29,#1F1E1D);padding:120px 0}
+.contact-section{border-top:1px solid var(--line);background:linear-gradient(120deg,#2C2A29,#000000);padding:120px 0}
 .contact-photo{width:440px;height:320px;max-width:100%;border-radius:16px;object-fit:cover;border:2px solid var(--accent);box-shadow:0 15px 40px rgba(217,119,87,.15);margin-bottom:16px}
 .contact-inner{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:end}.contact-inner h2{font-size:clamp(50px,7vw,88px);margin:12px 0 25px}.contact-text{color:var(--muted);max-width:530px}.contact-actions{display:flex;flex-direction:column;align-items:flex-start;gap:25px}.email-link{font:600 clamp(20px,3vw,34px) "Space Grotesk";color:var(--text);text-decoration:none;border-bottom:1px solid #60665e;padding-bottom:8px}.email-link:hover{color:var(--accent);border-color:var(--accent)}.socials{display:flex;gap:20px}.socials a{color:var(--muted);text-decoration:none;font-size:13px}.socials a:hover{color:var(--text)}
 .footer{padding:25px 0 35px;display:flex;justify-content:space-between;color:#616670;font-size:11px;border-top:1px solid var(--line)}
@@ -186,7 +186,7 @@ body.light .contact-section{background:linear-gradient(120deg,#FAF8F5,#EFEBE0)}
 
 @media(max-width:900px){
   .container{width:min(calc(100% - 34px),var(--max))}
-  .nav-links{display:none;position:absolute;top:78px;left:0;width:100%;padding:20px;background:rgba(31,30,29,.98);border-bottom:1px solid var(--line);flex-direction:column;gap:18px}.nav-links.open{display:flex}
+  .nav-links{display:none;position:absolute;top:78px;left:0;width:100%;padding:20px;background:rgba(0,0,0,.98);border-bottom:1px solid var(--line);flex-direction:column;gap:18px}.nav-links.open{display:flex}
   body.light .nav-links{background:rgba(250,248,245,.98)}.menu-toggle{display:flex;flex-direction:column;gap:5px}.menu-toggle span{display:block;width:24px;height:2px;background:var(--text)}
   .hero{grid-template-columns:96px 1fr;grid-template-areas:"badge badge" "photo name" "text text" "actions actions";min-height:auto;padding:140px 0 90px;column-gap:18px;row-gap:0;align-items:center}
   .hero-media{justify-self:center}
