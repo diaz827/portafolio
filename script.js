@@ -341,7 +341,7 @@ function applyTheme(isLight) {
   document.body.classList.toggle("light", isLight);
   document.documentElement.setAttribute("data-theme", isLight ? "light" : "dark");
   themeToggle?.setAttribute("aria-pressed", String(isLight));
-  themeColorMeta?.setAttribute("content", isLight ? "#f6f8fd" : "#0b0d14");
+  themeColorMeta?.setAttribute("content", isLight ? "#FAF8F5" : "#1F1E1D");
 }
 
 let savedTheme;
@@ -349,7 +349,7 @@ try {
   savedTheme = localStorage.getItem("theme");
 } catch (e) {}
 
-applyTheme(savedTheme === "light");
+applyTheme(savedTheme !== "dark");
 
 themeToggle?.addEventListener("click", () => {
   const isLight = document.body.classList.toggle("light");
