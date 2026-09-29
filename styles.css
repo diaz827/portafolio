@@ -197,7 +197,6 @@ body.light .contact-section{background:linear-gradient(120deg,#FAF8F5,#EFEBE0)}
   body.light .nav-links{background:rgba(250,248,245,.98)}.menu-toggle{display:flex;flex-direction:column;gap:5px}.menu-toggle span{display:block;width:24px;height:2px;background:var(--text)}
   .hero{grid-template-columns:96px 1fr;grid-template-areas:"badge badge" "photo name" "text text" "actions actions";min-height:auto;padding:140px 0 90px;column-gap:18px;row-gap:0;align-items:center}
   .hero-media{justify-self:center}
-  .hero-talk{display:none}
   .hero-actions{flex-wrap:wrap}
   .hero-socials{display:flex;width:100%;flex-wrap:wrap;margin-top:4px}
   .hero-avatar{width:96px;box-shadow:0 0 0 4px rgba(217,119,87,.1),0 10px 30px rgba(0,0,0,.35)}
