@@ -93,7 +93,10 @@ h1 em,h2 em{font-style:normal;color:var(--accent)}
 .hero-name{max-width:1000px;letter-spacing:-.03em}
 .hero-text{color:var(--muted);max-width:600px;font-size:17px;margin-top:28px}
 .hero-actions{display:flex;gap:12px;margin-top:38px}
-.hero-contact{display:none}
+.hero-socials{display:none;gap:12px;width:100%;flex-wrap:wrap;margin-top:4px}
+.icon-btn{width:46px;height:46px;display:inline-flex;align-items:center;justify-content:center;border-radius:50%;border:1px solid var(--line);background:var(--surface);color:var(--muted);text-decoration:none;transition:.25s}
+.icon-btn:hover{border-color:var(--accent);color:var(--accent);transform:translateY(-2px);box-shadow:0 8px 20px rgba(217,119,87,.18)}
+.icon-btn svg{width:20px;height:20px}
 .scroll-indicator{position:absolute;left:50%;bottom:26px;transform:translateX(-50%);color:var(--muted);display:flex}
 .scroll-indicator svg{width:20px;height:20px;animation:scrollBounce 1.8s ease-in-out infinite}
 @keyframes scrollBounce{0%,100%{transform:translateY(0);opacity:.5}50%{transform:translateY(8px);opacity:1}}
@@ -195,7 +198,8 @@ body.light .contact-section{background:linear-gradient(120deg,#FAF8F5,#EFEBE0)}
   .hero{grid-template-columns:96px 1fr;grid-template-areas:"badge badge" "photo name" "text text" "actions actions";min-height:auto;padding:140px 0 90px;column-gap:18px;row-gap:0;align-items:center}
   .hero-media{justify-self:center}
   .hero-talk{display:none}
-  .hero-contact{display:inline-flex}
+  .hero-actions{flex-wrap:wrap}
+  .hero-socials{display:flex}
   .hero-avatar{width:96px;box-shadow:0 0 0 4px rgba(217,119,87,.1),0 10px 30px rgba(0,0,0,.35)}
   h1{font-size:clamp(34px,8.5vw,54px)}
   .hero-card{max-width:620px}
