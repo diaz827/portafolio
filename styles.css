@@ -157,6 +157,7 @@ h1 em,h2 em{font-style:normal;color:var(--accent)}
 .bento-mini{position:absolute;right:28px;bottom:24px;display:grid;grid-template-columns:35px 55px;grid-auto-rows:28px;gap:5px}.bento-mini span{border:1px solid var(--line);background:rgba(107,101,95,.18);border-radius:5px}.bento-mini span:nth-child(2){grid-row:span 2;background:var(--accent-subtle)}.project-info{padding:27px 30px 31px}
 .project-meta{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px}.project-meta span{font-size:10px;text-transform:uppercase;letter-spacing:.12em;color:#858b95;border:1px solid var(--line);padding:5px 8px;border-radius:999px}
 .project-info h3{font-size:29px;margin-bottom:10px}.project-info p{color:var(--muted);font-size:14px;max-width:560px}.project-link{display:inline-flex;gap:10px;margin-top:23px;color:var(--text);text-decoration:none;font-weight:700;font-size:13px;border-bottom:1px solid #5f645c;padding-bottom:4px}.project-link:hover{color:var(--accent);border-color:var(--accent)}
+.project-links{display:flex;flex-wrap:wrap;gap:26px;align-items:center}.project-links .project-link{margin-top:23px}
 .project-filters {display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 35px;}
 .filter-btn {background: var(--surface-2); border: 1px solid var(--line); color: var(--muted); padding: 8px 18px; border-radius: 999px; font-family: "Space Grotesk", sans-serif; font-size: 13px; font-weight: 600; cursor: pointer; transition: all 0.25s ease;}
 .filter-btn:hover {color: var(--text); border-color: rgba(255, 255, 255, 0.25);}
