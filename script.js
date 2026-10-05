@@ -377,14 +377,3 @@ filterButtons.forEach(btn => {
     });
   });
 });
-
-// ─── Tech marquee (duplicate strip for seamless infinite loop) ───────────────
-
-const techMarquee = document.querySelector(".tech-marquee");
-if (techMarquee) {
-  const techTrack = techMarquee.firstElementChild;
-  const techClone = techTrack.cloneNode(true);
-  techClone.removeAttribute("role");
-  techClone.setAttribute("aria-hidden", "true");
-  techMarquee.appendChild(techClone);
-}
