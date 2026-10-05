@@ -1,6 +1,6 @@
 # Portfolio de Díaz
 
-Portfolio personal estático creado a partir del README público de GitHub de `diaz827`.
+Portfolio personal.
 
 ## Archivos
 
@@ -13,12 +13,6 @@ Portfolio personal estático creado a partir del README público de GitHub de `d
 
 ## Cómo verlo
 
-Abre `index.html` directamente en el navegador.
+Abre el siguiente enlace directamente en el navegador: https://soydiaz.pages.dev/
 
-## Publicarlo con GitHub Pages
 
-1. Crea un repositorio.
-2. Sube los archivos.
-3. En GitHub ve a **Settings → Pages**.
-4. Selecciona `Deploy from a branch`, rama `main` y carpeta `/root`.
-5. Guarda y espera a que GitHub Pages publique el sitio.
