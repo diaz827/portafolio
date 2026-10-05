@@ -116,7 +116,7 @@ h1 em,h2 em{font-style:normal;color:var(--accent)}
 .ticker{border-block:1px solid var(--line);overflow:hidden;white-space:nowrap}
 .ticker-track{display:flex;gap:26px;align-items:center;width:max-content;padding:17px 0;color:#777c86;font-family:"Space Grotesk";font-size:12px;font-weight:700;letter-spacing:.15em;animation:ticker-scroll 28s linear infinite}
 @keyframes ticker-scroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
-@media (prefers-reduced-motion: reduce){.ticker-track{animation:none}.tech-marquee.is-ready{animation:none}}
+@media (prefers-reduced-motion: reduce){.ticker-track{animation:none}}
 .ticker-track i{color:var(--accent);font-style:normal;font-size:9px}
 .section{padding:140px 0}
 .section-heading{display:grid;grid-template-columns:100px 1fr;gap:25px;align-items:start;margin-bottom:70px}
@@ -167,11 +167,7 @@ h1 em,h2 em{font-style:normal;color:var(--accent)}
 .project-card {transition: opacity 0.35s ease, transform 0.35s ease;}
 .project-card.filtered-out {opacity: 0; transform: scale(0.95); pointer-events: none; display: none !important;}
 .stack-grid{display:grid;grid-template-columns:repeat(4,1fr);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
-.tech-badges-wrap{overflow:hidden;margin-top:30px}
-.tech-marquee{display:flex;width:max-content}
-.tech-marquee.is-ready{animation:tech-scroll 60s linear infinite}
-@keyframes tech-scroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
-.tech-badges{display:flex;flex-wrap:nowrap;gap:16px;align-items:center;padding-right:16px}
+.tech-badges{display:flex;flex-wrap:wrap;gap:16px;margin-top:30px}
 .tech-badge{display:inline-flex;align-items:center;gap:10px;padding:12px 22px;border-radius:10px;font-family:"Space Grotesk",sans-serif;font-weight:700;font-size:14px;letter-spacing:.08em;background:var(--badge-color, var(--surface-2));box-shadow:0 8px 25px rgba(0,0,0,.3);transition:transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease}
 .tech-badge:hover{transform:translateY(-3px);filter:brightness(1.1);box-shadow:0 0 25px var(--badge-color, rgba(217,119,87, 0.4))}
 .stack-card{padding:28px;border-right:1px solid var(--line);min-height:220px}.stack-card:last-child{border-right:0}.stack-card>span{color:#646a74;font:700 10px "Space Grotesk"}.stack-card h3{font-size:24px;margin:42px 0 6px}.stack-card p{color:var(--muted);font-size:13px}.tags{display:flex;flex-wrap:wrap;gap:5px;margin-top:18px}.tags span{font-size:10px;color:#7d828b;background:#161920;border:1px solid var(--line);border-radius:999px;padding:4px 7px}
