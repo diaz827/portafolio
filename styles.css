@@ -114,7 +114,9 @@ h1 em,h2 em{font-style:normal;color:var(--accent)}
 .muted{color:#5d6470}.code-accent{color:var(--accent)}.cursor{animation:blink 1s infinite}
 @keyframes blink{50%{opacity:0}}
 .ticker{border-block:1px solid var(--line);overflow:hidden;white-space:nowrap}
-.ticker-track{display:flex;justify-content:center;gap:26px;align-items:center;min-width:max-content;padding:17px 0;color:#777c86;font-family:"Space Grotesk";font-size:12px;font-weight:700;letter-spacing:.15em}
+.ticker-track{display:flex;gap:26px;align-items:center;width:max-content;padding:17px 0;color:#777c86;font-family:"Space Grotesk";font-size:12px;font-weight:700;letter-spacing:.15em;animation:ticker-scroll 28s linear infinite}
+@keyframes ticker-scroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@media (prefers-reduced-motion: reduce){.ticker-track{animation:none}}
 .ticker-track i{color:var(--accent);font-style:normal;font-size:9px}
 .section{padding:140px 0}
 .section-heading{display:grid;grid-template-columns:100px 1fr;gap:25px;align-items:start;margin-bottom:70px}
