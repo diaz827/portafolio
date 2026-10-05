@@ -115,10 +115,8 @@ h1 em,h2 em{font-style:normal;color:var(--accent)}
 @keyframes blink{50%{opacity:0}}
 .ticker{border-block:1px solid var(--line);overflow:hidden;white-space:nowrap}
 .tools-marquee{width:100%;overflow:hidden;padding:17px 0}
-.tools-track{display:flex;width:max-content;flex-shrink:0;animation:marquee 96s linear infinite}
+.tools-track{display:flex;width:max-content;flex-shrink:0;justify-content:center;margin-inline:auto}
 .tools-group{display:flex;align-items:center;flex-shrink:0;white-space:nowrap;gap:26px;padding-right:26px;color:#777c86;font-family:"Space Grotesk";font-size:12px;font-weight:700;letter-spacing:.15em}
-@keyframes marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
-@media (prefers-reduced-motion: reduce){.tools-track{animation:none}}
 .tools-group i{color:var(--accent);font-style:normal;font-size:9px}
 .section{padding:140px 0}
 .section-heading{display:grid;grid-template-columns:100px 1fr;gap:25px;align-items:start;margin-bottom:70px}
