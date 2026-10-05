@@ -5,9 +5,11 @@ Portfolio personal estático creado a partir del README público de GitHub de `d
 ## Archivos
 
 - `index.html` — estructura y contenido.
-- `styles.css` — diseño responsive, animaciones y componentes visuales.
-- `script.js` — menú móvil, scroll reveal y año automático.
-- `juego.html` — minijuego interactivo integrado.
+- `stiles/styles.css` — diseño responsive, animaciones y componentes visuales.
+- `script/script.js` — menú móvil, scroll reveal y año automático.
+- `pages/juego.html` — minijuego interactivo integrado.
+- `img/` — imágenes (fotos, logotipos de proyectos, favicon).
+- `archivos/` — documentos PDF (currículum).
 
 ## Cómo verlo
 
