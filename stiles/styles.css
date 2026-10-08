@@ -164,8 +164,6 @@ h1 em,h2 em{font-style:normal;color:var(--accent)}
 .project-meta{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 16px;padding:0;list-style:none}.project-meta li{font-size:10px;text-transform:uppercase;letter-spacing:.12em;color:#858b95;border:1px solid var(--line);padding:5px 8px;border-radius:999px}
 .project-info h3{font-size:29px;margin-bottom:10px}.project-info p{color:var(--muted);font-size:14px;max-width:560px}.project-link{display:inline-flex;gap:10px;margin-top:23px;color:var(--text);text-decoration:none;font-weight:700;font-size:13px;border-bottom:1px solid #5f645c;padding-bottom:4px}.project-link:hover{color:var(--accent);border-color:var(--accent)}
 .project-links{display:flex;flex-wrap:wrap;gap:26px;align-items:center}.project-links .project-link{margin-top:23px}
-.project-toggle{display:none;align-items:center;justify-content:center;width:34px;height:34px;margin-top:14px;border:1px solid var(--line);border-radius:50%;background:var(--surface-2);color:var(--text);font-size:20px;line-height:1;cursor:pointer;transition:transform .3s ease,background .2s ease,color .2s ease}
-.project-toggle[aria-expanded="true"]{transform:rotate(45deg);background:var(--accent);color:#2C2A29;border-color:var(--accent)}
 .project-filters {display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 35px;}
 .filter-btn {background: var(--surface-2); border: 1px solid var(--line); color: var(--muted); padding: 8px 18px; border-radius: 999px; font-family: "Space Grotesk", sans-serif; font-size: 13px; font-weight: 600; cursor: pointer; transition: all 0.25s ease;}
 .filter-btn:hover {color: var(--text); border-color: rgba(255, 255, 255, 0.25);}
@@ -224,19 +222,6 @@ body.light .contact-section{background:linear-gradient(120deg,#FAF8F5,#EFEBE0)}
   .timeline-item{grid-template-columns:1fr;gap:10px}.timeline-year{padding-top:0}
   .footer{flex-direction:column;gap:8px}.contact-section{padding:90px 0}
   .project-visual{min-height:230px}.browser{inset:65px 25px 25px}.code-window{left:25px;right:25px}
-  .projects{grid-template-columns:1fr 1fr;gap:14px}
-  .project-visual{min-height:140px;padding:14px}
-  .visual-label{font-size:8px}
-  .project-info{padding:16px 14px 18px}
-  .project-info h3{font-size:17px;margin-bottom:8px}
-  .project-meta{gap:5px;margin-bottom:10px}
-  .project-meta li{font-size:8px;padding:4px 6px}
-  .project-link{font-size:11px;gap:6px;margin-top:14px}
-  .project-links{gap:14px}
-  .project-links .project-link{margin-top:14px}
-  .project-toggle{display:inline-flex}
-  .project-desc{max-height:0;margin:0;overflow:hidden;visibility:hidden;transition:max-height .35s ease,margin .35s ease,visibility 0s linear .35s}
-  .project-card.expanded .project-desc{max-height:400px;margin:8px 0 0;visibility:visible;transition:max-height .35s ease,margin .35s ease,visibility 0s}
 }
 .cert-link{display:inline-block;margin-top:6px;font:600 12px "Space Grotesk";color:var(--accent);text-decoration:none;border-bottom:1px solid transparent;transition:color .2s,border-color .2s}
 .cert-link+.cert-link{margin-left:18px}

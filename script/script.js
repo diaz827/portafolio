@@ -81,7 +81,6 @@ const translations = {
     "proj4.desc": "Web interactiva sobre la raza podenco con diseño Bento Grid, lightbox para imágenes y vídeo de carga con lógica JavaScript adaptada a móvil.",
     "proj5.desc": "Web con control mediante gestos en la cámara para el play, pausa, pasar de canción u otras mas",
     "link.visit": "Visitar proyecto",
-  "project.more": "Ver más",
     "link.website": "Visitar web",
     "stack.eyebrow": "Herramientas",
     "stack.title": "Stack y<br><em>herramientas.</em>",
@@ -178,7 +177,6 @@ const translations = {
     "proj4.desc": "Interactive website about the podenco breed with a Bento Grid layout, image lightbox and lazy-load video with mobile-friendly JavaScript logic.",
     "proj5.desc": "Website with gesture control through the camera for play, pause, skipping tracks and more",
     "link.visit": "Visit project",
-  "project.more": "Show more",
     "link.website": "Visit website",
     "stack.eyebrow": "Tools",
     "stack.title": "Stack and<br><em>tools.</em>",
@@ -275,7 +273,6 @@ const translations = {
     "proj4.desc": "Site interativo sobre a raça podenco com design Bento Grid, lightbox para imagens e vídeo com carregamento atrasado e lógica JavaScript adaptada a telemóvel.",
     "proj5.desc": "Site com controlo através de gestos na câmara para play, pausa, mudar de música e mais",
     "link.visit": "Visitar projeto",
-  "project.more": "Ver mais",
     "link.website": "Visitar web",
     "stack.eyebrow": "Ferramentas",
     "stack.title": "Stack e<br><em>ferramentas.</em>",
@@ -432,13 +429,5 @@ filterButtons.forEach(btn => {
         card.classList.add("filtered-out");
       }
     });
-  });
-});
-
-document.querySelectorAll(".project-toggle").forEach(btn => {
-  btn.addEventListener("click", () => {
-    const card = btn.closest(".project-card");
-    const open = card.classList.toggle("expanded");
-    btn.setAttribute("aria-expanded", open ? "true" : "false");
   });
 });
