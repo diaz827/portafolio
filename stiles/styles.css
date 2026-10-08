@@ -136,6 +136,7 @@ h1 em,h2 em{font-style:normal;color:var(--accent)}
 .projects{display:grid;grid-template-columns:1fr 1fr;gap:20px}
 .project-card{display:block;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;transition:.3s}
 .project-card:hover{transform:translateY(-5px);border-color:rgba(217,119,87,.25)}
+.project-card:last-child:nth-child(odd){grid-column:1/-1;display:grid;grid-template-columns:1fr 1fr}
 .project-visual{min-height:330px;position:relative;overflow:hidden;padding:22px;margin:0}
 .project-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:1;transition:transform .5s ease}
 .project-card:hover .project-img{transform:scale(1.04)}
@@ -207,7 +208,7 @@ body.light .contact-section{background:linear-gradient(120deg,#FAF8F5,#EFEBE0)}
   .hero-card{max-width:620px}
   .hero-wrap{min-height:auto}.hero-wrap .hero{padding-top:130px}.scroll-indicator{display:none}
   .about-grid,.contact-inner{grid-template-columns:1fr;gap:50px}
-  .projects{grid-template-columns:1fr}.project-card,.project-featured,.project-wide{grid-column:auto;display:block}.project-visual{min-height:260px}
+  .projects{grid-template-columns:1fr}.project-card,.project-featured,.project-wide{grid-column:auto;display:block}.project-card:last-child:nth-child(odd){grid-column:auto;display:block}.project-visual{min-height:260px}
   .stack-grid{grid-template-columns:1fr 1fr}.stack-card:nth-child(2){border-right:0}.stack-card:nth-child(-n+2){border-bottom:1px solid var(--line)}
   .timeline{margin-left:0}
 }
