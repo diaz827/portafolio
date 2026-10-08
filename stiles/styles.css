@@ -197,3 +197,12 @@ body.light .contact-section{background:linear-gradient(120deg,#FAF8F5,#EFEBE0)}
 .cert-link:hover{color:var(--accent-hover);border-color:var(--accent-hover)}
 
 :focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+
+.contact-form{display:grid;gap:14px;max-width:520px;margin-top:34px}
+.contact-form .form-row{display:grid;gap:6px}
+.contact-form label{font:700 11px "Space Grotesk";letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.contact-form input,.contact-form textarea{width:100%;background:rgba(255,255,255,.04);border:1px solid var(--line);border-radius:10px;padding:12px 14px;color:var(--text);font:inherit;font-size:14px;transition:border-color .2s}
+.contact-form input:focus,.contact-form textarea:focus{border-color:var(--accent)}
+.contact-form textarea{resize:vertical;min-height:110px}
+body.light .contact-form input,body.light .contact-form textarea{background:rgba(255,255,255,.7)}
+.form-note{font-size:12px;color:var(--muted);margin:0}
