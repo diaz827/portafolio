@@ -23,7 +23,7 @@
         <span>Díaz<span class="dot" aria-hidden="true">.</span></span>
       </a>
 
-      <ul class="nav-links">
+      <ul class="nav-links" id="navLinks">
         <li><a href="pages/juego.html" data-i18n="nav.minigame">Minijuego</a></li>
         <li><a href="#sobre-mi" data-i18n="nav.about">Sobre mí</a></li>
         <li><a href="#proyectos" data-i18n="nav.projects">Proyectos</a></li>
@@ -42,7 +42,7 @@
           <svg class="theme-icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2.5M12 19.5V22M22 12h-2.5M4.5 12H2M19.07 4.93l-1.77 1.77M6.7 17.3l-1.77 1.77M19.07 19.07l-1.77-1.77M6.7 6.7L4.93 4.93"/></svg>
           <svg class="theme-icon-moon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
         </button>
-        <button class="menu-toggle" aria-label="Abrir menú de navegación" aria-expanded="false">
+        <button class="menu-toggle" aria-label="Abrir menú de navegación" aria-expanded="false" aria-controls="navLinks">
           <span aria-hidden="true"></span><span aria-hidden="true"></span>
         </button>
       </div>
@@ -144,9 +144,9 @@
         </header>
 
         <div class="project-filters reveal" role="group" aria-label="Filtros de proyectos">
-          <button class="filter-btn active" data-filter="all" data-i18n="filter.all">Todos</button>
-          <button class="filter-btn" data-filter="web" data-i18n="filter.web">Web</button>
-          <button class="filter-btn" data-filter="java">Java</button>
+          <button class="filter-btn active" data-filter="all" data-i18n="filter.all" aria-pressed="true">Todos</button>
+          <button class="filter-btn" data-filter="web" data-i18n="filter.web" aria-pressed="false">Web</button>
+          <button class="filter-btn" data-filter="java" aria-pressed="false">Java</button>
         </div>
 
         <div class="projects">

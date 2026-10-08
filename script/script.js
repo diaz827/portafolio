@@ -6,16 +6,29 @@ window.addEventListener("scroll", () => {
   header?.classList.toggle("scrolled", window.scrollY > 20);
 }, { passive: true });
 
+function setNavOpen(open) {
+  nav?.classList.toggle("open", open);
+  toggle?.setAttribute("aria-expanded", String(open));
+}
+
 toggle?.addEventListener("click", () => {
-  const open = nav.classList.toggle("open");
-  toggle.setAttribute("aria-expanded", String(open));
+  setNavOpen(!nav.classList.contains("open"));
 });
 
 document.querySelectorAll(".nav-links a").forEach(link => {
-  link.addEventListener("click", () => {
-    nav.classList.remove("open");
-    toggle?.setAttribute("aria-expanded", "false");
-  });
+  link.addEventListener("click", () => setNavOpen(false));
+});
+
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape") setNavOpen(false);
+});
+
+document.addEventListener("click", (e) => {
+  if (nav?.classList.contains("open") && !e.target.closest?.(".nav")) setNavOpen(false);
+});
+
+window.matchMedia("(min-width: 901px)").addEventListener("change", (e) => {
+  if (e.matches) setNavOpen(false);
 });
 
 if ("IntersectionObserver" in window) {
@@ -421,9 +434,14 @@ const filterButtons = document.querySelectorAll(".filter-btn");
 const projectCards = document.querySelectorAll(".project-card");
 
 filterButtons.forEach(btn => {
+  btn.setAttribute("aria-pressed", String(btn.classList.contains("active")));
   btn.addEventListener("click", () => {
-    filterButtons.forEach(b => b.classList.remove("active"));
+    filterButtons.forEach(b => {
+      b.classList.remove("active");
+      b.setAttribute("aria-pressed", "false");
+    });
     btn.classList.add("active");
+    btn.setAttribute("aria-pressed", "true");
     const filter = btn.getAttribute("data-filter");
 
     projectCards.forEach(card => {
