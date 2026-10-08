@@ -70,40 +70,11 @@ portfolio-diaz/
 
 ---
 
-## Ejecución en local
-
-No hay dependencias ni build. Dos opciones:
-
-1. **Directa:** abre `index.html` con doble clic en el navegador.
-2. **Con servidor local** (recomendado para probar con las mismas condiciones que en producción):
-
-```bash
-git clone https://github.com/diaz827/portafolio.git
-cd portafolio
-
-# con Python
-python -m http.server 8000
-# o con Node
-npx serve .
-```
-
-Luego entra en http://localhost:8000
-
----
-
 ## Despliegue
 
 - Plataforma: **[Cloudflare Pages](https://pages.cloudflare.com/)**
 - Origen: rama `main` del repositorio, con **deploy automático en cada push** (build command: ninguno, output: raíz del repo).
 - Producción: **https://soydiaz.pages.dev/**
-
----
-
-## Cómo añadir una traducción
-
-1. Añade el nodo al HTML con la clave: `<h2 data-i18n="mi.clave">Texto por defecto</h2>`
-2. Registra `mi.clave` en los **tres** diccionarios de `script/script.js` (ES, EN y PT).
-3. Si es un atributo (p. ej. `aria-label`): `data-i18n-attr="aria-label|mi.clave"`.
 
 ---
 
