@@ -3,8 +3,8 @@ const toggle = document.querySelector(".menu-toggle");
 const nav = document.querySelector(".nav-links");
 
 window.addEventListener("scroll", () => {
-  header.classList.toggle("scrolled", window.scrollY > 20);
-});
+  header?.classList.toggle("scrolled", window.scrollY > 20);
+}, { passive: true });
 
 toggle?.addEventListener("click", () => {
   const open = nav.classList.toggle("open");
@@ -18,21 +18,26 @@ document.querySelectorAll(".nav-links a").forEach(link => {
   });
 });
 
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add("visible");
-      observer.unobserve(entry.target);
-    }
+if ("IntersectionObserver" in window) {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("visible");
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12 });
+
+  document.querySelectorAll(".reveal").forEach((el, i) => {
+    el.style.transitionDelay = `${Math.min(i * 45, 250)}ms`;
+    observer.observe(el);
   });
-}, { threshold: 0.12 });
+} else {
+  document.querySelectorAll(".reveal").forEach(el => el.classList.add("visible"));
+}
 
-document.querySelectorAll(".reveal").forEach((el, i) => {
-  el.style.transitionDelay = `${Math.min(i * 45, 250)}ms`;
-  observer.observe(el);
-});
-
-document.getElementById("year").textContent = new Date().getFullYear();
+const yearEl = document.getElementById("year");
+if (yearEl) yearEl.textContent = new Date().getFullYear();
 
 // ─── i18n ───────────────────────────────────────────────────────────────────
 
