@@ -50,6 +50,7 @@ Portfolio personal de **Daniel Díaz Canosa** — estudiante de Desarrollo de Ap
 ```
 portfolio-diaz/
 ├── index.html              # Estructura y contenido de la portada
+├── 404.html                # Página de error personalizada (la sirve Cloudflare Pages)
 ├── stiles/
 │   └── styles.css          # Diseño responsive, temas, animaciones y componentes
 ├── script/

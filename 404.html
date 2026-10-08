@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex">
+  <title>404 · Página no encontrada — Díaz</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+    :root{
+      --bg:#000000;
+      --surface:rgba(255,255,255,.04);
+      --line:#262626;
+      --text:#F5F2EC;
+      --muted:#9a958d;
+      --accent:#D97757;
+      --accent-hover:#C5654A;
+    }
+    *{margin:0;padding:0;box-sizing:border-box}
+    body{
+      min-height:100vh;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:40px 20px;
+      background:
+        radial-gradient(circle at 80% 10%,rgba(217,119,87,.10),transparent 30%),
+        radial-gradient(circle at 10% 90%,rgba(217,119,87,.06),transparent 30%),
+        var(--bg);
+      color:var(--text);
+      font-family:"DM Sans",sans-serif;
+      text-align:center;
+      overflow:hidden;
+    }
+    .nf{max-width:640px}
+    .eyebrow{
+      display:inline-flex;align-items:center;gap:10px;
+      font:700 11px "Space Grotesk",sans-serif;letter-spacing:.2em;text-transform:uppercase;
+      color:var(--accent);margin-bottom:18px;
+    }
+    .pulse{width:8px;height:8px;border-radius:50%;background:var(--accent);animation:pulse 1.6s infinite}
+    @keyframes pulse{
+      0%,100%{box-shadow:0 0 0 0 rgba(217,119,87,.5)}
+      50%{box-shadow:0 0 0 8px rgba(217,119,87,0)}
+    }
+    .nf-code{
+      font:700 clamp(90px,22vw,200px)/1 "Space Grotesk",sans-serif;
+      letter-spacing:-.04em;margin-bottom:6px;
+    }
+    .nf-code em{font-style:normal;color:var(--accent)}
+    .nf-title{font:600 clamp(22px,4vw,32px) "Space Grotesk",sans-serif;margin-bottom:14px}
+    .nf-text{color:var(--muted);font-size:16px;line-height:1.7;max-width:440px;margin:0 auto 34px}
+    .nf-actions{display:flex;flex-wrap:wrap;gap:14px;justify-content:center}
+    .btn{
+      display:inline-flex;align-items:center;justify-content:center;
+      padding:14px 26px;border-radius:12px;text-decoration:none;
+      font:700 14px "DM Sans",sans-serif;transition:.25s;border:1px solid transparent;
+    }
+    .btn-primary{background:var(--accent);color:#2C2A29}
+    .btn-primary:hover{background:var(--accent-hover);transform:translateY(-2px)}
+    .btn-ghost{border-color:var(--line);color:var(--text);background:var(--surface)}
+    .btn-ghost:hover{border-color:var(--accent);color:var(--accent);transform:translateY(-2px)}
+    a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+    @media (prefers-reduced-motion:reduce){
+      *{animation:none!important;transition:none!important}
+    }
+  </style>
+</head>
+<body>
+  <main class="nf">
+    <p class="eyebrow"><span class="pulse" aria-hidden="true"></span> Error</p>
+    <h1 class="nf-code">4<em>0</em>4</h1>
+    <p class="nf-title">Página no encontrada</p>
+    <p class="nf-text">La página que buscas no existe o ha cambiado de sitio. Vuelve al inicio o, si prefieres, pasa una partida al minijuego.</p>
+    <div class="nf-actions">
+      <a class="btn btn-primary" href="/">Volver al inicio</a>
+      <a class="btn btn-ghost" href="/pages/juego.html">Jugar al minijuego</a>
+    </div>
+  </main>
+</body>
+</html>
