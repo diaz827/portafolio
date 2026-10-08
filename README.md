@@ -66,6 +66,7 @@ portfolio-diaz/
 │   └── Generative_AI_Foundations.pdf   # Generative AI Foundations
 ├── robots.txt
 ├── sitemap.xml
+├── prompt-portfolio.md      # Prompt reutilizable para generar un portfolio similar desde un CV
 └── README.md
 ```
 
@@ -82,6 +83,21 @@ portfolio-diaz/
 ## Stack
 
 HTML5 · CSS3 · JavaScript (ES6+) — 100% vanilla
+
+---
+
+## ¿Quieres hacer uno igual?
+
+He preparado un prompt reutilizable: **[prompt-portfolio.md](prompt-portfolio.md)**. Sirve para generar un portfolio con este mismo estilo **a partir de tu currículum, sea cual sea tu sector** (no hace falta ser programador).
+
+Cómo usarlo:
+
+1. Abre `prompt-portfolio.md`, copia todo y pégalo en tu IA favorita (ChatGPT, Claude, Gemini…).
+2. Al final del prompt hay un hueco `<<< INICIO CV >>>`: pega ahí el texto de tu currículum.
+3. La IA generará una **web demo completa solo con el CV** y después te irá **preguntando apartado por apartado** (identidad, proyectos, experiencia, contacto, diseño…) lo que falte para personalizarla.
+4. Sustituye el código de Formsubmit por el que te llegue a tu correo y despliega en Cloudflare Pages.
+
+Incluye la especificación de diseño (colores, tipografías, secciones), accesibilidad, SEO, tema oscuro/claro, i18n opcional y el formulario de contacto sin backend.
 
 ---
 
