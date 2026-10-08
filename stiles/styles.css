@@ -63,6 +63,8 @@ body:before{content:"";position:fixed;inset:0;background:radial-gradient(circle 
 .nav-links a,.footer a{color:var(--muted);text-decoration:none;font-size:14px;transition:.2s}
 .nav-links a:hover,.footer a:hover{color:var(--text)}
 .header-actions{display:flex;align-items:center;gap:10px;margin-left:24px}
+.nav-cv{display:none;padding:9px 14px;font-size:13px;gap:0;white-space:nowrap;border-radius:10px}
+.nav-cv-short{display:none}
 .theme-toggle,.lang-toggle{display:inline-flex;align-items:center;justify-content:center;width:36px;height:36px;border-radius:10px;border:1px solid var(--line);background:var(--surface-2);color:var(--text);cursor:pointer;transition:.25s}
 .theme-toggle:hover,.lang-toggle:hover{border-color:var(--accent);color:var(--accent)}
 .theme-toggle svg{width:17px;height:17px}
@@ -171,6 +173,7 @@ body.light .timeline p{color:#2C2A29}
 body.light .contact-section{background:linear-gradient(120deg,#FAF8F5,#EFEBE0)}
 
 @media(max-width:900px){
+  .nav-cv{display:inline-flex}
   .container{width:min(calc(100% - 34px),var(--max))}
   .nav-links{display:none;position:absolute;top:78px;left:0;width:100%;padding:20px;background:rgba(0,0,0,.98);border-bottom:1px solid var(--line);flex-direction:column;gap:18px}.nav-links.open{display:flex}
   body.light .nav-links{background:rgba(250,248,245,.98)}.menu-toggle{display:flex;flex-direction:column;gap:5px}.menu-toggle span{display:block;width:24px;height:2px;background:var(--text)}
@@ -188,6 +191,9 @@ body.light .contact-section{background:linear-gradient(120deg,#FAF8F5,#EFEBE0)}
   .timeline{margin-left:0}
 }
 @media(max-width:600px){
+  .nav-cv-long{display:none}
+  .nav-cv-short{display:inline}
+  .nav-cv{padding:8px 11px;font-size:12px}
   h1{font-size:clamp(34px,8.5vw,54px)}.section{padding:90px 0}.section-heading{grid-template-columns:45px 1fr;gap:10px;margin-bottom:45px}.section-heading h2{font-size:45px}
   .hero-text{font-size:17px}.hero-actions{flex-wrap:wrap}
   .timeline-item{grid-template-columns:1fr;gap:10px}.timeline-year{padding-top:0}
