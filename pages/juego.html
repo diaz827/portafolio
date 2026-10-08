@@ -359,6 +359,7 @@
   }
 
   function endGame() {
+    if (state !== 'playing') return;
     state = 'gameover';
     if (score > bestScore) {
       bestScore = score;
@@ -547,12 +548,15 @@
 
   wrapper.addEventListener('touchstart', (e) => {
     if (e.target === startBtn || e.target === retryBtn) return;
+    if (e.target.closest && e.target.closest('.back-btn')) return;
     e.preventDefault();
     flap();
   }, { passive: false });
 
   document.addEventListener('keydown', (e) => {
     if (e.code === 'Space' || e.code === 'ArrowUp') {
+      const focused = document.activeElement;
+      if (e.code === 'Space' && focused && focused.tagName === 'BUTTON') return;
       e.preventDefault();
       if (state === 'playing') {
         flap();
@@ -564,10 +568,12 @@
   window.addEventListener('resize', () => {
     clearTimeout(resizeTimeout);
     resizeTimeout = setTimeout(() => {
+      const speedRatio = PIPE_SPEED / BASE_PIPE_SPEED;
       if (state === 'playing') {
         // Reescala posiciones existentes para no romper la partida en curso
         const oldW = W, oldH = H;
         computeSizes();
+        PIPE_SPEED = BASE_PIPE_SPEED * speedRatio;
         const scaleX = W / oldW;
         const scaleY = H / oldH;
         bird.x *= scaleX;
@@ -579,6 +585,7 @@
         }
       } else {
         computeSizes();
+        PIPE_SPEED = BASE_PIPE_SPEED * speedRatio;
         draw();
       }
     }, 120);
