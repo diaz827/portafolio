@@ -61,6 +61,7 @@ portfolio-diaz/
 ├── archivos/               # PDFs descargables
 │   ├── CV_Daniel_Diaz.pdf              # Currículum
 │   ├── certificadoCredits.pdf          # Certificado Credits
+│   ├── certificadoCursoGit.pdf         # Certificado Curso de Git (OpenWebinars)
 │   ├── diplomaCamaraComercio.pdf       # Diploma Cámara de Comercio
 │   ├── FormacionDixital.pdf            # Formación Dixital
 │   └── Generative_AI_Foundations.pdf   # Generative AI Foundations
